@@ -51,19 +51,17 @@ export async function getAIAssistance(request: AIAssistanceRequest): Promise<AIA
     const responses = mockResponses[category];
     const randomResponse = responses[Math.floor(Math.random() * responses.length)];
 
-    if(!process.env.REACT_APP_OPENAI_API_KEY) {
+    // OPEN AI section with prompt details
+    /* START **/
+    const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+    console.log('OPENAI_KEY', apiKey);
+    console.log({env: process.env});
+    if (!apiKey) {
       return {
         suggestion: randomResponse,
         success: true
       };
-    }
-
-    // OPEN AI section with prompt details
-    /* START **/
-    const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
-    
-    if (!apiKey) {
-      throw new Error('OpenAI API key is not configured');
+      // throw new Error('OpenAI API key is not configured');
     }
 
     const response = await axios.post(

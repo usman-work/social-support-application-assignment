@@ -16,7 +16,7 @@ const SocialSupportAppContent: React.FC = () => {
   const { toast } = useToast();
   const { state, setCurrentStep, saveProgress, loadSavedData, resetForm } = useForm();
   const { currentStep } = state.data;
-  const [showSuccess, setShowSuccess] = useState(false);
+const [showSuccess, setShowSuccess] = useState(false);
 
   useEffect(() => {
     // Check for saved data on mount
