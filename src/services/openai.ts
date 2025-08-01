@@ -54,8 +54,6 @@ export async function getAIAssistance(request: AIAssistanceRequest): Promise<AIA
     // OPEN AI section with prompt details
     /* START **/
     const apiKey = process.env.REACT_APP_OPENAI_API_KEY || import.meta.env.VITE_OPENAI_API_KEY;
-    console.log('OPENAI_KEY', apiKey);
-    console.log({env: process.env});
     if (!apiKey) {
       return {
         suggestion: randomResponse,
