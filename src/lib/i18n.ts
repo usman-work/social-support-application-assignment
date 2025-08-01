@@ -10,7 +10,7 @@ const resources = {
       "of": "of",
       "next": "Next",
       "previous": "Previous",
-      "submit": "Submit Application",
+      "submit": "Submit",
       "save_progress": "Save Progress",
       "continue": "Continue",
       
