@@ -172,11 +172,19 @@ npm run test:coverage   # Run tests with coverage
 ## 🚀 Deployment
 
 ### Option 1: Vercel Platform (Recommended)
-1. Open [Vercel Project](https://vercel.com/)
-2. Connect your github.com repository with Vercel
-3. Select the project
-4. Click on Deploy
-5. Your app will be deployed automatically
+Deploy your own Vite project with Vercel.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+
+_Live Example: https://vite-react-example.vercel.app_
+
+#### Deploying From Your Terminal
+
+You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+
+```shell
+$ vercel
+```
 
 ### Option 2: Manual Deployment
 ```bash
